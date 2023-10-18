@@ -1,0 +1,14 @@
+Wyatt Dunn
+CSCI576 Multimedia Systems Design
+Homework 3: DWT Compression
+
+This program shows the steps in image compression and decompression. 
+To run this program two parameters must be used:
+First is the name of the image that is being compressed
+Second is an integral number from 0 to 9 that defines the low pass level of the image compression being performed.  a value of -1 can also be used to show the progressive decoding of the image at each level. 
+
+This program assumes the images are of the size 512x512.
+Two rgb image files are provided in the repository for use
+
+Example command to invoke:
+java ImageDisplay stagforest_512_512.rgb -1
