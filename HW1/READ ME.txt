@@ -1,0 +1,17 @@
+Wyatt Dunn
+CS576 Multimedia Systems Design
+Homework 1: Quantization and Subsampling
+
+The Java program, ImageDisplay, performs quantization and subsampling on an rgb type image.  To run the program you invoke the following command with the parameters listed below: 
+
+First parameter is the name of the image rgb file.  This program assumes that the image is in an 8 bit per channel RGB format and of the size 1920wx1080h
+
+The next three parameters are integers that control the subsampling of the Y U and V spaces. A value of 1 indicates no subsampling.  Values higher than 1 indicate subsampling in that color space.  We are subsampling only on the width of the images and not the height in this program.
+
+The next two parameters are single precision floats which take positive values less than or equal to 1.0.  These control the scaled output image width and height respectively.  
+
+Final parameter signals whether antialiasing is to occur.  0 indicates no antialiasing.
+
+example input provided below. This will return an output image identical to the input image.  lake-forest_1920w_1080h.rgb is a provided example image file for running the program.   
+
+java ImageDisplay lake-forest_1920w_1080h.rgb 1 1 1 1.0 1.0 0
